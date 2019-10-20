@@ -1,0 +1,4 @@
+In Python you can use list to save data.
+In Python you can use dictionary to save data.
+In Python you can use  'if' sentence to program.
+In Python you can use function to simplify program.

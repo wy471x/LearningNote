@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+# coding=utf-8
+players = ['charles','martina','michael','florence','eli']
+print(players[-3:])sdkfjksjdflsjfljsdjflsdjflsjdflsjdfljsdlfjldkjfl
+sdflskjdflksjdfljslkfjksdjflsdjflksdjflksdjfldjflsdjfsldfjlsdjfldjflsjfdkkddfdsddfkkdflsdjfljsdlfjslfjlflkdjflsjdljfljdlfjsljfldjlfjdlfsjl
+adaskdjlajdklsjdlasjdsjdlasjdlajdkajdlajdljasdajdlkjdljdafhksdhfksdhfskdjhfksdhfkjsdhfkshdfkhfkhdfkshkdfhakhfsadflfhskdfhkdfhw
+sdasjflsdjflskjfslfksdjfkdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
