@@ -47,9 +47,17 @@ public:
         return true;
     }
 };
+时间复杂度为 O（n^3）,leetcode上运行超时
 
 Review:
-英文技术文章
+因为自己刚刚开始参加工作，于是学习了一些较为基本的前端知识。
+相关的前端技术文档如下：
+CSS
+https://developer.mozilla.org/zh-CN/docs/Web/CSS
+HTML
+https://developer.mozilla.org/zh-CN/docs/Web/HTML
+Javascript
+https://www.w3schools.com/js/js_htmldom.asp
 
 Tip:
 工作所需，每天需要在Linux环境下进行操作，由于那些命令很多都是重复的的导致工作效率并不是很高。
@@ -60,6 +68,7 @@ Tip:
 整个效果需要重启后才会生效
 
 Share：
-
+通过阅读了coolshell上的有关MySQL的性能调优的技术文章，我也真切的感受到对于查询语句设计的重要性。
+https://coolshell.cn/articles/1846.html
 
 
