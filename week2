@@ -3,44 +3,70 @@ https://leetcode-cn.com/problems/median-of-two-sorted-arrays/
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-        int median;
+        double median;
         // nums1 is empty
         if(nums1.empty())
         {
             int len2 = nums2.size();
             if(nums2.size() % 2 == 0)
             {
-                return (nums2[len2 / 2 - 1] + nums2[len2 / 2]) / 2;
+                median = (nums2[len2 / 2 - 1] + nums2[len2 / 2]) / 2;
             }
             else
             {
-                return nums2[len2 / 2];
+                median = nums2[len2 / 2];
             }
+            return median;
         }
         //nums2 is empty
         else if(nums2.empty()){
             int len1 = nums1.size();
             if(nums1.size() % 2 == 0)
             {
-                return (nums1[len1 / 2 - 1] + nums1[len1 / 2]) / 2;
+                median = (nums1[len1 / 2 - 1] + nums1[len1 / 2]) / 2;
             }
             else
             {
-                return nums1[len1 / 2];
+                median = nums1[len1 / 2];
             }
+            return median;
         }
         vector<int> mergeArray;
         vector<int>::iterator beg1 = nums1.begin(),end1 = nums1.end();
         vector<int>::iterator beg2 = nums2.begin(),end2 = nums2.end();
         //merge operation
-        while(beg1 != end1 || beg2 != end2)
+        while(beg1 != end1 && beg2 != end2)
         {
             if( *beg1 < *beg2)
             {
-                mergeArray.pop_back(*beg1);
+                mergeArray.push_back(*beg1);
+                beg1++;
+            }
+            else
+            {
+                mergeArray.push_back(*beg2);
+                beg2++;
             }
         }
-        
+        while(beg1 != end1)
+        {
+            mergeArray.push_back(*beg1);
+            beg1++;
+        }
+        while(beg2 != end2)
+        {
+            mergeArray.push_back(*beg2);
+            beg2++;
+        }
+        if(mergeArray.size() % 2 == 0)
+        {
+            median = (mergeArray[mergeArray.size() / 2 - 1] + mergeArray[mergeArray.size() / 2]) / 2;
+        }
+        else
+        {
+            median = mergeArray[mergeArray.size() / 2];
+        }
+        return median;
     }
 };
 
