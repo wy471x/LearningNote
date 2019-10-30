@@ -10,7 +10,7 @@ public:
             int len2 = nums2.size();
             if(nums2.size() % 2 == 0)
             {
-                median = (nums2[len2 / 2 - 1] + nums2[len2 / 2]) / 2;
+                median = (double)(nums2[len2 / 2 - 1] + nums2[len2 / 2]) / 2;
             }
             else
             {
@@ -23,7 +23,7 @@ public:
             int len1 = nums1.size();
             if(nums1.size() % 2 == 0)
             {
-                median = (nums1[len1 / 2 - 1] + nums1[len1 / 2]) / 2;
+                median =(double)(nums1[len1 / 2 - 1] + nums1[len1 / 2]) / 2;
             }
             else
             {
@@ -31,10 +31,16 @@ public:
             }
             return median;
         }
+        median = mergeArray(nums1,nums2);
+        return median;
+    }
+    //merge two array 
+    double mergeArray(vector<int>& arr1,vector<int>& arr2)
+    {
+        double result;
         vector<int> mergeArray;
-        vector<int>::iterator beg1 = nums1.begin(),end1 = nums1.end();
-        vector<int>::iterator beg2 = nums2.begin(),end2 = nums2.end();
-        //merge operation
+        vector<int>::iterator beg1 = arr1.begin(),end1 = arr1.end();
+        vector<int>::iterator beg2 = arr2.begin(),end2 = arr2.end();
         while(beg1 != end1 && beg2 != end2)
         {
             if( *beg1 < *beg2)
@@ -60,16 +66,15 @@ public:
         }
         if(mergeArray.size() % 2 == 0)
         {
-            median = (mergeArray[mergeArray.size() / 2 - 1] + mergeArray[mergeArray.size() / 2]) / 2;
+            result =(double) (mergeArray[mergeArray.size() / 2 - 1] + mergeArray[mergeArray.size() / 2]) / 2;
         }
         else
         {
-            median = mergeArray[mergeArray.size() / 2];
+            result = mergeArray[mergeArray.size() / 2];
         }
-        return median;
+        return result;
     }
 };
-
 
 Review:
 
