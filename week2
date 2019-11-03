@@ -76,23 +76,56 @@ public:
         return result;
     }
 };
+此题，运用合并算法，将两个有序数组进行合并形成一个有序数组，再进行查找
 problem 2 :
 https://leetcode-cn.com/problems/longest-palindromic-substring/
 class Solution {
 public:
     string longestPalindrome(string s) {
-         
+        string maxString;
+        for(int i = 0; i < s.size(); ++i){
+            for(int j = 0;j < s.size(); ++j){
+                if(isPalindromicString(s.substr(i,j-i+1)) 
+                   && s.substr(i,j-i+1).size() > maxString.size()){
+                    maxString = s.substr(i,j-i+1);
+                }
+            }
+        }
+        return maxString;
     }
     bool isPalindromicString(string s){
         int len = s.size();
         int i = 0, j = len -1;
         if(len % 2 == 0){
             while(i < j){
-                
+                if(s[i] != s[j])
+                {
+                    break;
+                }
+                i++;
+                j--;
             }
+            if(i > j)
+                return true;
+            else
+                return false;
+        }
+        else{
+            while(i < j){
+                if(s[i] != s[j]){
+                    break;
+                }
+                i++;
+                j--;
+            }
+            if(i == j)
+                return  true;
+            else
+                return false;
         }
     }
 };
+此题运用暴力法，时间超时
 
 Review:
 本周我看到耗子叔推荐的那篇如何提高自己编程能力的文章感觉感悟挺深的。这篇文章从几个点分别阐述了作为程序员应该具有的素养，以及
