@@ -1,0 +1,19 @@
+Algorithm:
+https://leetcode-cn.com/problems/reverse-integer/
+class Solution {
+public:
+    int reverse(int x) {
+        string temporaryString = to_string(x);
+        string resultString;
+        int i = 0;
+        while(i < temporaryString.size()){
+            resultString.push_back
+        }
+    }
+};
+
+Review:
+
+Tip:
+
+Share:
