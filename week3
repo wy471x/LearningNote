@@ -5,10 +5,27 @@ public:
     int reverse(int x) {
         string temporaryString = to_string(x);
         string resultString;
-        int i = 0;
-        while(i < temporaryString.size()){
-            resultString.push_back
+        int i = temporaryString.size() - 1;
+        long resultNumber;
+        if(x < 0){
+        while(i > 0){
+            resultString.push_back(temporaryString[i]);
+            i--;
+        } 
+        resultNumber = -stol(resultString);
+        }else{
+            while(i >= 0){
+                resultString.push_back(temporaryString[i]);
+                i--;
+            }
+            resultNumber  = stol(resultString);
         }
+        if(resultNumber >INT_MAX || resultNumber < INT_MIN)
+        {
+            return 0;
+        }
+        
+        return (int)resultNumber;
     }
 };
 
