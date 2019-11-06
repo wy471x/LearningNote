@@ -1,4 +1,5 @@
 Algorithm:
+problem 1:
 https://leetcode-cn.com/problems/reverse-integer/
 class Solution {
 public:
@@ -26,6 +27,29 @@ public:
         }
         
         return (int)resultNumber;
+    }
+};
+problem 2:
+https://leetcode-cn.com/problems/string-to-integer-atoi/
+class Solution {
+public:
+    int myAtoi(string str) {
+         if(str.empty())
+            return 0;
+         
+    }
+    bool firstIsNumber(string str){
+        int i = 0;
+        while( i < str.size()){
+            if(isspace(str[i])){
+                i++;
+            }else if(is){
+                 break;
+            }
+        }
+        if(i == str.size()){
+            return false;
+        }
     }
 };
 
