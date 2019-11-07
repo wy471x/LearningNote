@@ -36,22 +36,35 @@ public:
     int myAtoi(string str) {
          if(str.empty())
             return 0;
+         char flag;
+         if(firstIsNumber(str)){
+             
+         }
          
     }
+    //judge first number whether it is a number.
     bool firstIsNumber(string str){
         int i = 0;
         while( i < str.size()){
-            if(isspace(str[i])){
+            if(isspace(str[i]) || 
+               str[i] == '+' || 
+               str[i] == '-')
+            {
                 i++;
-            }else if(is){
-                 break;
-            }
+            }else if(isdigit(str[i]))
+                  {
+                         break;
+                  }else{
+                         return false;
+                  }
         }
         if(i == str.size()){
             return false;
         }
+        return true; 
     }
 };
+
 
 Review:
 
