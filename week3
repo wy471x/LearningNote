@@ -117,7 +117,17 @@ class Solution {
 };
 
 Review:
+https://medium.com/netflix-techblog/delta-a-data-synchronization-and-enrichment-platform-e82c36a79aee
+这是一篇有关Netflix自己开发的数据同步与改进平台，具体细节设计很多具有很大的价值。由于自己工作内容相关性不多，有好多技术
+还不知晓，感觉自身要学习的东西太多。
 
 Tip:
+不得不说一个好的代码阅读工具对于自己开发而言是具有重要意义的。面对大量的代码，你需要去对应不同的功能，通过代码阅读工具可以
+很好的帮助到你。这里我想推荐一些比较的代码阅读工具：Sourceinsight、SlickEdit等，只能说是各有各的特色。
 
 Share:
+由于自己平时会涉及到Android开发，所以这里可以分享一些有关android调试方面的技巧
+在这里放上官网调试的文档链接如下：
+https://developer.android.com/reference/android/util/Log
+
+
