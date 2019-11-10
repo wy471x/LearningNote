@@ -31,6 +31,7 @@ public:
 };
 problem 2:
 https://leetcode-cn.com/problems/string-to-integer-atoi/
+solution1: 自己写的超时
 class Solution {
   public:
     int myAtoi(string str) {
@@ -102,6 +103,17 @@ class Solution {
         }
         return true; 
     }
+};
+solution2：简便方法，利用string流
+class Solution {
+  public:
+    int myAtoi(string str) {
+        int d = 0;
+        istringstream iss(str);
+        iss >> d;
+        return d;   
+    }
+   
 };
 
 Review:
