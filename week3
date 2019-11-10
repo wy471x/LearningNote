@@ -36,7 +36,7 @@ class Solution {
     int myAtoi(string str) {
          if(str.empty())
             return 0;
-         char flag;
+         char flag = ' ';
          vector<int> storeNumber;
          if(firstIsNumber(str)){
              int i = 0;
@@ -47,12 +47,39 @@ class Solution {
                      break;
                  }
              }
-             flag = str[i];
+             if(str[i] == '-'){
+                 flag = str[i];
+             }else if(str[i] == '+'){
+                 flag = str[i];
+             }
+             for(i=i+1;i < str.size();i++){
+                 if(isdigit(str[i])){
+                     storeNumber.push_back(str[i] - '0');
+                 }else{
+                     break;
+                 }
+             }
+             long resultNumber = 0;
+             int position = storeNumber.size() - 1;
+             int index = 0;
+             while(position >= 0){
+                 resultNumber += storeNumber[index] * pow(10,position);
+                 index++;
+             }
+             if(flag == '-' ){
+                 resultNumber = -resultNumber;
+             }
+             if( resultNumber > INT_MAX){
+                 return INT_MAX;
+             }else if( resultNumber < INT_MIN){
+                 return INT_MIN;
+             }else{
+                 return (int)resultNumber;
+             }
              
          }else{
              return 0;
-         }
-         
+         }   
     }
     //judge first number whether it is a number.
     bool firstIsNumber(string str){
