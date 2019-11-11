@@ -14,6 +14,23 @@ public:
         return true;
     }
 };
+solution2 : 
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if(x < 0)
+            return false;
+        vector<int> ivec;
+        int temp = 0;
+        while(x <= 0){
+            temp = x % 10;
+            ivec.push_back(temp);
+        }
+        for(int i = 0,j = ivec.size();i < j;i++,j--){
+            
+        }
+    }
+};
 
 Review:
 
