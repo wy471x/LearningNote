@@ -1,4 +1,5 @@
 Algorithm:
+problem 1:
 https://leetcode-cn.com/problems/palindrome-number/
 solution 1:
 class Solution {
@@ -29,6 +30,32 @@ public:
         for(int i = 0,j = ivec.size();i < j;i++,j--){
             
         }
+    }
+};
+problem 2:
+https://leetcode-cn.com/problems/container-with-most-water/submissions/
+solution 1:
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        if(height.empty())
+            return 0;
+        int maxArea = 0;
+        for(int i = 0;i < height.size();i++){
+            for(int j = i + 1;j < height.size();j++){
+                int width = j - i,length = 0,area = 0;
+                if(height[i] > height[j]){
+                    length = height[j];
+                }else{
+                    length = height[i];
+                }
+                area = width * length;
+                if(area > maxArea){
+                    maxArea = area;
+                }
+            }
+        }
+        return maxArea; 
     }
 };
 
