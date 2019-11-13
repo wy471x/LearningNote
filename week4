@@ -22,9 +22,8 @@ public:
         if(x < 0)
             return false;
         vector<int> ivec;
-        int temp = 0;
         while(x <= 0){
-            temp = x % 10;
+            int temp = x % 10;
             x /= 10;
             ivec.push_back(temp);
         }
@@ -34,7 +33,7 @@ public:
                 return false;
             }
         }
-        return true;
+        return true; 
     }
 };
 problem 2:
