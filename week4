@@ -64,7 +64,45 @@ public:
 };
 problem 3：
 https://leetcode-cn.com/problems/integer-to-roman/
+class Solution {
+public:
+    string intToRoman(int num) {
+         int tenPow = 1;
+         string resultString;
+         while(num > 0){
+           int temporaryNumber = num % 10;
+           temporaryNumber *= tenPow;
+           num /= 10;
+           string unitsDigit;
+           string tensDigit;
+           string hundredsPlace;
+           string thousandsPlace;
+           if(0 < temporaryNumber && temporaryNumber < 10){
+                if(0 < temporaryNumber && temporaryNumber < 4){
+                      switch(temporaryNumber){
+                          case 1 : unitsDigit = "I";
+                          case 2 : unitsDigit = "II";
+                          case 3 : unitsDigit = "III";
+                      }
+                }else if(temporaryNumber < 9 && temporaryNumber >  3){
+                       switch(temporaryNumber){
+                           case 4 : unitsDigit = "IV";
+                           case 5 : unitsDigit = "V";
+                           case 6 : unitsDigit = "VI";
+                           case 7 : unitsDigit = "VII";
+                           case 8 : unitsDigit = "VIII";
+                       }
+                }else{
+                    
+                }
+           }
 
+
+
+           tenPow *= 10;  
+         }
+    }
+};
 
 Review:
 
