@@ -69,44 +69,75 @@ public:
     string intToRoman(int num) {
          int tenPow = 1;
          string resultString;
+         string unitsDigit;
+         string tensDigit;
+         string hundredsDigit;
+         string thousandsDigit;
          while(num > 0){
            int temporaryNumber = num % 10;
            temporaryNumber *= tenPow;
            num /= 10;
-           string unitsDigit;
-           string tensDigit;
-           string hundredsPlace;
-           string thousandsPlace;
            if(0 < temporaryNumber && temporaryNumber < 10){
-                if(0 < temporaryNumber && temporaryNumber < 4){
                       switch(temporaryNumber){
-                          case 1 : unitsDigit = "I";
-                          case 2 : unitsDigit = "II";
-                          case 3 : unitsDigit = "III";
-                      }
-                }else if(temporaryNumber < 9 && temporaryNumber >  3){
-                       switch(temporaryNumber){
-                           case 4 : unitsDigit = "IV";
-                           case 5 : unitsDigit = "V";
-                           case 6 : unitsDigit = "VI";
-                           case 7 : unitsDigit = "VII";
-                           case 8 : unitsDigit = "VIII";
+                          case 1 : unitsDigit = "I"; break;
+                          case 2 : unitsDigit = "II"; break;
+                          case 3 : unitsDigit = "III"; break;
+                          case 4 : unitsDigit = "IV"; break;
+                          case 5 : unitsDigit = "V"; break;
+                          case 6 : unitsDigit = "VI"; break;
+                          case 7 : unitsDigit = "VII"; break;
+                          case 8 : unitsDigit = "VIII"; break;
+                          case 9 : unitsDigit = "IX"; break;
                        }
-                }else{
-                    
-                }
-           }
-
-
-
-           tenPow *= 10;  
+            }//end of if
+            else if( temporaryNumber >= 10 && temporaryNumber < 100){
+                       switch(temporaryNumber){
+                           case 10 : tensDigit = "X"; break;
+                           case 20 : tensDigit = "XX"; break;
+                           case 30 : tensDigit = "XXX"; break;
+                           case 40 : tensDigit = "XL"; break;
+                           case 50 : tensDigit = "L"; break;
+                           case 60 : tensDigit = "LX"; break;
+                           case 70 : tensDigit = "LXX"; break;
+                           case 80 : tensDigit = "LXXX"; break;
+                           case 90 : tensDigit = "XC"; break;
+                       }
+            }
+            else if(temporaryNumber >= 100 &&temporaryNumber < 1000){
+                       switch(temporaryNumber){
+                           case 100 : hundredsDigit = "C"; break;
+                           case 200 : hundredsDigit = "CC"; break;
+                           case 300 : hundredsDigit = "CCC"; break;
+                           case 400 : hundredsDigit = "CD"; break;
+                           case 500 : hundredsDigit = "D"; break;
+                           case 600 : hundredsDigit = "DC"; break;
+                           case 700 : hundredsDigit = "DCC"; break;
+                           case 800 : hundredsDigit = "DCCC"; break;
+                           case 900 : hundredsDigit = "CM"; break;
+                       }
+            }
+            else if(temporaryNumber >= 1000 && temporaryNumber < 4000){
+                       switch(temporaryNumber){
+                           case 1000 : thousandsDigit = "M"; break;
+                           case 2000 : thousandsDigit = "MM"; break;
+                           case 3000 : thousandsDigit = "MMM"; break;
+                       }
+            }
+            tenPow *= 10;  
          }
+        resultString = thousandsDigit + hundredsDigit + tensDigit + unitsDigit;
+        return resultString;
     }
 };
 
 Review:
+本次我分享的文章是Netflix技术博客的有关GraphQL搜索索引的文章，里面有详细的实现以及如何达到数据的同步更新等内容
+https://medium.com/netflix-techblog/graphql-search-indexing-334c92e0d8d5
+
 
 Tip:
+以下是自己在时间工作中了解到的一些相关技巧
+https://blog.csdn.net/qq_40073459/article/details/103069149
 
 Share:
 
