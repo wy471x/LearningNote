@@ -1,0 +1,45 @@
+p{
+    color:blue;
+}
+
+strong{
+    color:red;
+    text-decoration:underline;
+}
+
+.special{
+    color:brown;
+}
+
+/*p.special{
+    color:brown;
+}
+
+p{
+  color: blue;
+}*/
+
+.outer{
+ border:5px solid black;
+}
+
+.box{
+ margin: 30px;
+ width: 100px;
+ height: 100px;
+ background-color:rebeccapurple;
+ transform:rotate(0.8turn)
+
+}
+
+span{
+    border: 1px solid black;
+}
+
+.one{
+    color:green;
+}
+
+#1st{
+    font-weight:bolder;
+}

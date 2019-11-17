@@ -1,0 +1,11 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 20px;
+}
+
+.wrapper > div {
+  background-color: rebeccapurple;
+  border-radius: .5em;
+}

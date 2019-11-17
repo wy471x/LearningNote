@@ -1,0 +1,21 @@
+/* numbered paragraphs */
+h3.numbered {counter-reset: mynum;}
+
+li{
+    list-style: lower-roman;
+}
+
+p.numbered:before {
+    content: counter(mynum) ": ";
+    counter-increment: mynum;
+    font-weight: bold;
+
+}
+
+body{
+    counter-reset:headnum;
+}
+h3:before{
+    content:"(" counter(headnum,upper-latin) ")";
+    counter-increment: headnum;
+}

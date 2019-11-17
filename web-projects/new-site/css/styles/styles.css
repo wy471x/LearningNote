@@ -1,0 +1,48 @@
+h1{
+  color:red;
+}
+
+p,li{
+  color:blue;
+}
+
+li{
+  list-style-type: disc;
+}
+
+li.special,
+span.special{
+ color:orange;
+ font-weight:bold;
+}
+
+li em{
+ color: rebeccapurple;
+}
+
+p em{
+ color: rebeccapurple;
+}
+
+h1 + p{
+ font-size: 200%;
+}
+
+a:link{
+ color:pink;
+}
+
+a:visited{
+ color:green;
+}
+
+a:hover{
+ text-decoration: none;
+}
+
+body h1 + p.special{
+ color: yellow;
+ background-color: black;
+ padding: 5px;
+}
+

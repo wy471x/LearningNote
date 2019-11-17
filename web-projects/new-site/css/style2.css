@@ -1,0 +1,32 @@
+strong { 
+    color: red;  
+    font:200% serif;
+}
+
+.carrot { 
+    color: orange;  
+}
+
+.spinach { 
+    color: green;  
+}
+
+#first { 
+    font-style: italic;  
+    color:blue;
+}
+
+p{
+    color:blue;
+}
+p:before{
+    content:url("Yellow-pin.png");
+}
+#second{
+    color:blue;
+}
+
+body{
+    font:16px "Comic Sans MS",cursive;
+    background:url("Blue-rule.png");
+}
