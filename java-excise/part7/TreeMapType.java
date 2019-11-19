@@ -18,7 +18,11 @@ public class TreeMapType {
         //sorted map
         Map<StudentTwo, Integer> map2 = new TreeMap<>(new Comparator<StudentTwo>() {
             public int compare(StudentTwo p1, StudentTwo p2) {
-                return p1.score > p2.score ? -1 : 1;
+//                if(p1.score == p2.score) {
+//                	return 0;
+//                }
+//            	return p1.score > p2.score ? -1 : 1;
+            	return Integer.compare(p1.score, p2.score);
             }
         });
         map2.put(new StudentTwo("Tom", 77), 1);

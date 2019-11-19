@@ -109,5 +109,4 @@ public class ListType {
 		}
 		return j;
 	}
-
 }
