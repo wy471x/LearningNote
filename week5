@@ -1,5 +1,9 @@
 Algorithm:
 https://leetcode-cn.com/problems/roman-to-integer/
+思路 ：
+本题有以下四种情形：
+以I和V开头为个位、以X和L开头为十位、以C和D开头为百位、以M开头为千位
+将所有数字存入map中，对字符串进行匹配然后进行组合计算得出结果
 
 Review:
 
