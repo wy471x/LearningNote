@@ -11,4 +11,19 @@ public class FactorialTest {
         assertEquals(3628800, Factorial.fact(10));
         assertEquals(2432902008176640000L, Factorial.fact(20));
     }
+	
+	@Test
+	void testNegative() {
+//		assertThrows(IllegalArgumentException.class,new Executable() {
+//			@Override 
+//			public void execute() throws Throwable{
+//				Factorial.fact(-1);
+//			}
+//		});
+		assertThrows(IllegalArgumentException.class,()->{Factorial.fact(-1);});
+	}
+	@Test
+	void testOverflow() {
+		assertThrows(ArithmeticException.class,()->{Factorial.fact(21);});
+	}
 }
