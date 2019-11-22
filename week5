@@ -27,7 +27,7 @@ public:
             }
         }else if(s[0] == 'X' || s[0] == 'L'){
             int i = 0;
-            while( (s[i] != 'I' || s[i] != 'V') && i < s.size()){
+            while( (s[i] != 'I' || s[i] != 'V')&&i < s.size()){
                 tensPlace.push_back(s[i]);
                 i++;
             }
@@ -37,7 +37,7 @@ public:
             }
         }else if(s[0] == 'C' || s[0] == 'D'){
             int i = 0;
-            while((s[i] != 'X' || s[i] != 'L') &&　i < s.size()){
+            while((s[i] != 'X' || s[i] != 'L')&&i < s.size()){
                 hundredsPlace.push_back(s[i]);
                 i++;
             }
@@ -49,9 +49,9 @@ public:
                 unitsPlace.push_back(s[i]);
                 i++;
             }
-        }else {
+        }else if(s[0] == 'M'){
             int i = 0;
-            while((s[i] != 'C' || s[i] != 'D') &&　i < s.size()){
+            while((s[i] != 'C' || s[i] != 'D')&&i < s.size()){
                 thousandsPlace.push_back(s[i]);
                 i++;
             }
@@ -77,8 +77,20 @@ public:
               result += ism[thousandsPlace] + ism[hundredsPlace];
         }else if(!thousandsPlace.empty()){
               result += ism[thousandsPlace];
+        }else if( !hundredsPlace.empty() && !tensPlace.empty() && !unitsPlace.empty()){
+            result += ism[hundredsPlace] + ism[tensPlace] + ism[unitsPlace];
+        }else if( !hundredsPlace.empty() && !tensPlace.empty()){
+            result += ism[hundredsPlace] + ism[tensPlace];
+        }else if( !hundredsPlace.empty()){
+            result += ism[hundredsPlace];
+        }else if( !tensPlace.empty() && !unitsPlace.empty()){
+            result += ism[tensPlace] + ism[unitsPlace];
+        }else if( !tensPlace.empty()){
+            result += ism[tensPlace];
+        }else if( !unitsPlace.empty()){
+            result += ism[unitsPlace];
         }
-
+        return result;
     }
 };
 
