@@ -114,7 +114,24 @@ public:
 };
 
 Review:
+本周我阅读了来自medium上netflix关于不健康的JVM垃圾回收的应对方法，受益良多。
+具体可见：https://medium.com/@NetflixTechBlog/introducing-jvmquake-ec944c60ba70
+针对JVM应用像Cassandra和Elasticsearch，在某些情况下，例如死查询或是数据存储
+的bug都将会造成内存耗尽，并且这样会触发垃圾回收的循环或甚至是耗尽JVM的内存耗尽
+netflix团队已经喜欢使用JVMKILL去缓解这种情况，而jvmkill是一种跑在使用jvmti API
+的jvm进程的代理。在JVM没有100%耗尽内存时，jvmkill无法注意到这个问题，但是我们
+的客户端却可以快速的抓住这个问题，这个问题便是数据存储结点的生产效率已经显著下降了
+4个数量级。
+针对上述问题的解决方案是： identify and kill bad JVMs Proactively
+所以后面就有了jvmquake实现来解决jvmkill无法处理的问题提出了类似于短板效应的debt 
+counter算法去追踪不正常的JVM，并且同时设置门槛去判断JVM的健康程度。本文最后还同时
+告诉我们要如何去处理现场的证据，通过这些数据来整段是属于哪种类型的问题，比如坏查询
+、硬件、配置等。
 
 Tip:
+初涉java，本人发现java中的单元测试功能对于驱动式开发开发效率是极其重要。
+测试框架将项目代码与测试代码进行了分离，针对测试即可观察到实际代码的错误
+之处。
+具体可见：https://www.liaoxuefeng.com/wiki/1252599548343744/1255945269146912
 
 Share:
