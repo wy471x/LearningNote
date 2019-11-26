@@ -11,16 +11,18 @@ https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        ListNode *pCur = head, *pDist = head;
+        ListNode *pPre = head, *pDist = head;
         int lenOfList = 0;
-        while(pDist != null){
-            lenOfList++；
+        while(pDist != nullptr){
+            lenOfList++;
             pDist = pDist->next;
         }
         int i = 0;
-        while(i < len - n){
-            pCur = pCur->next;
+        while(i < lenOfList - n){
+            pPre = pPre->next;
         }
+        pPre->next = pPre->next->next;
+        return head;
     }
 };
 
