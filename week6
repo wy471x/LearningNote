@@ -1,5 +1,28 @@
 Algorithm
-https://leetcode-cn.com/problems/longest-common-prefix/
+https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode *pCur = head, *pDist = head;
+        int lenOfList = 0;
+        while(pDist != null){
+            lenOfList++；
+            pDist = pDist->next;
+        }
+        int i = 0;
+        while(i < len - n){
+            pCur = pCur->next;
+        }
+    }
+};
 
 Review
 
