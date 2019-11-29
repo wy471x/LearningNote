@@ -18,10 +18,11 @@ public:
             pDist = pDist->next;
         }
         int i = 0;
-        while(i <= lenOfList - n && pPre->next != nullptr){
+        while(i < lenOfList - n){
             pPre = pPre->next;
+            i++;
         }
-        pPre->next = pPre->next->next;
+        pPre->next = pPre->next->next; 
         return head;
     }
 };
