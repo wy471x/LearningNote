@@ -1,8 +1,60 @@
 Algorithm
-https://blog.csdn.net/qq_40073459/article/details/103326606
+https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/submissions/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode *pPre = head, *pDist = head;
+        int lenOfList = 0;
+        while(pDist != nullptr){
+            lenOfList++;
+            pDist = pDist->next;
+        }
+        int i = 0;
+        while(i < lenOfList - n - 1){
+            pPre = pPre->next;
+            i++;
+        }
+        if( 1 == lenOfList){
+            head = nullptr;
+        }else if(n == lenOfList){
+            head = head->next; 
+        }else{
+            pPre->next = pPre->next->next;
+        }
+        return head;
+    }
+};
 
 Review
+本周我要分享的是以下netflix技术团队对于python应用的文章
+https://medium.com/netflix-techblog/python-at-netflix-bba45dae649e
+这篇文章从以下几个方面分别阐述应用的场景以及特点
+ 1.Open Connect
+ 2.Demand engineering
+ 3.Core
+ 4.Monitoring ,alerting and auto-remediation
+ 5.Information security
+ 6.Machine learning infrastructure
+ 7.Notebook
+ 8.Orchestration
+ 9.Experimentation platform
+ 10.Partner ecosystem
+ 11.Video encoding and media cloud engineering
+ 12.Netflix Animation and NVFX
+ 13.Content machine learning ,science and analytics
 
 Tip
+以下是我从网上找到的一篇关于如何在Dev-C++软件中进行调试的技巧
+https://blog.csdn.net/hz18790581821/article/details/78418648
 
 Share
+以下是有关对于数据结构与算法的链表相关学习与整理
+https://blog.csdn.net/qq_40073459/article/details/103326606
