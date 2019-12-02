@@ -1,0 +1,48 @@
+Algorithm
+https://leetcode-cn.com/problems/min-stack/
+class MinStack {
+public:
+    /** initialize your data structure here. */
+    MinStack() {
+        iv = new vector<int>();
+    }
+    
+    void push(int x) {
+        iv->push_back(x);
+    }
+    
+    void pop() {
+        iv->pop_back();
+    }
+    
+    int top() {
+        return iv->front();
+    }
+    
+    int getMin() {
+          auto it = iv->begin();
+          int minElement = (*it);
+          for(it = it + 1; it != iv->end(); it++){
+              if((*it) < minElement)
+                 minElement = (*it);
+          }
+          return minElement;
+    }
+private:
+    vector<int> *iv;
+};
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack* obj = new MinStack();
+ * obj->push(x);
+ * obj->pop();
+ * int param_3 = obj->top();
+ * int param_4 = obj->getMin();
+ */
+
+Review
+
+Tip
+
+Share
