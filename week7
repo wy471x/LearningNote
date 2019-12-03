@@ -40,6 +40,21 @@ private:
  * int param_3 = obj->top();
  * int param_4 = obj->getMin();
  */
+https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/
+class Solution {
+public:
+    int evalRPN(vector<string>& tokens) {
+        stack<int> is;
+        for(int i = 0; i < tokens.size(); i++){
+            if(tokens[i] != "-" || 
+               tokens[i] != "+" || 
+               tokens[i] != "*" || 
+               tokens[i] != "/") {
+                 is.push(tokens[i]);
+            }
+        }
+    }
+};
 
 Review
 
