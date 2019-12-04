@@ -50,9 +50,37 @@ public:
                tokens[i] != "+" || 
                tokens[i] != "*" || 
                tokens[i] != "/") {
-                 is.push(tokens[i]);
+                 int temp = stoi(tokens[i]);
+            }else if(tokens[i] == "+" && is.size() == 2){
+                  int temp = 0;
+                  while( !is.empty() ){
+                      temp += is.top();
+                      is.pop();
+                  }
+                  is.push(temp);
+            }else if(tokens[i] == "-" && is.size() == 2){
+                  int temp = 0;
+                  while( !is.empty() ){
+                      temp -= is.top();
+                      is.pop();
+                  }
+                  is.push(temp);
+            }else if(tokens[i] == "*" && is.size() == 2){
+                  int temp = 1;
+                  while( !is.empty() ){
+                      temp *= is.top();
+                      is.pop();
+                  }
+                  is.push(temp);
+            }else if(tokens[i] == "/" && is.size() == 2){
+                  int temp = is.top();
+                  is.pop();
+                  temp /= is.top();
+                  is.pop();
+                  is.push(temp);
             }
         }
+        return is.top();
     }
 };
 
