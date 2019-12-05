@@ -51,29 +51,33 @@ public:
                  int temp = stoi(tokens[i]);
                  is.push(temp);
             }else if( tokens[i] == "+" && is.size() > 1 ){
-                  int temp = is.top();
+                  int tempSecond = is.top();
                   is.pop();
-                  temp += is.top();
+                  int tempFirst = is.top();
                   is.pop();
-                  is.push(temp);
+                  tempFirst += tempSecond;
+                  is.push(tempFirst);
             }else if( tokens[i] == "-" && is.size() > 1 ){
-                  int temp = is.top();
+                 int tempSecond = is.top();
                   is.pop();
-                  temp -= is.top();
+                  int tempFirst = is.top();
                   is.pop();
-                  is.push(temp);
+                  tempFirst -= tempSecond;
+                  is.push(tempFirst);
             }else if( tokens[i] == "*" && is.size() > 1 ){
-                  int temp = is.top();
+                  int tempSecond = is.top();
                   is.pop();
-                  temp *= is.top();
+                  int tempFirst = is.top();
                   is.pop();
-                  is.push(temp);
+                  tempFirst *= tempSecond;
+                  is.push(tempFirst);
             }else if( tokens[i] == "/" && is.size() > 1 ){
-                  int temp = is.top();
+                  int tempSecond = is.top();
                   is.pop();
-                  temp /= is.top();
+                  int tempFirst = is.top();
                   is.pop();
-                  is.push(temp);
+                  tempFirst /= tempSecond;
+                  is.push(tempFirst);
             }
         }
         return is.top();
