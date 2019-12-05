@@ -45,34 +45,30 @@ class Solution {
 public:
     int evalRPN(vector<string>& tokens) {
         stack<int> is;
+        set<string> ss = {"+","-","*","/"};
         for(int i = 0; i < tokens.size(); i++){
-            if(tokens[i] != "-" || 
-               tokens[i] != "+" || 
-               tokens[i] != "*" || 
-               tokens[i] != "/") {
+            if( ss.find(tokens[i]) == ss.end() ) {
                  int temp = stoi(tokens[i]);
-            }else if(tokens[i] == "+" && is.size() == 2){
-                  int temp = 0;
-                  while( !is.empty() ){
-                      temp += is.top();
-                      is.pop();
-                  }
+                 is.push(temp);
+            }else if( tokens[i] == "+" && is.size() > 1 ){
+                  int temp = is.top();
+                  is.pop();
+                  temp += is.top();
+                  is.pop();
                   is.push(temp);
-            }else if(tokens[i] == "-" && is.size() == 2){
-                  int temp = 0;
-                  while( !is.empty() ){
-                      temp -= is.top();
-                      is.pop();
-                  }
+            }else if( tokens[i] == "-" && is.size() > 1 ){
+                  int temp = is.top();
+                  is.pop();
+                  temp -= is.top();
+                  is.pop();
                   is.push(temp);
-            }else if(tokens[i] == "*" && is.size() == 2){
-                  int temp = 1;
-                  while( !is.empty() ){
-                      temp *= is.top();
-                      is.pop();
-                  }
+            }else if( tokens[i] == "*" && is.size() > 1 ){
+                  int temp = is.top();
+                  is.pop();
+                  temp *= is.top();
+                  is.pop();
                   is.push(temp);
-            }else if(tokens[i] == "/" && is.size() == 2){
+            }else if( tokens[i] == "/" && is.size() > 1 ){
                   int temp = is.top();
                   is.pop();
                   temp /= is.top();
