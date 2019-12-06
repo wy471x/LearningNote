@@ -83,6 +83,25 @@ public:
         return is.top();
     }
 };
+https://leetcode-cn.com/problems/next-greater-element-i/
+class Solution {
+public:
+    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
+          vector<int> resultArray;
+          for(int i = 0; i < nums1.size(); i++){
+               if(nums2.find(nums1[i]) != nums2.end()){
+                   vector<int>::iterator start = nums2.find(nums1[i]) + 1;
+                   while(start < nums2.end()){
+                       if( *start > nums1[i] ){
+                           break;
+                       }
+                   }
+                   if
+
+               }
+          }
+    }
+};
 
 Review
 
