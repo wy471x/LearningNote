@@ -114,8 +114,19 @@ public:
 };
 
 Review
-
+本周阅读了一篇关于Netflix和AWS合作的开源项目Metaflow，该项目是针对于数据科学的开源框架项目
+Metaflow框架已经广泛用于Netflix，并且建立和管理大量从自然语言处理到操作研究的数据科学项目。
+从整体设计而言，Metaflow仅仅只是一个Python库而已，如此简洁的设计，为数据科学家的工作省去了很
+多不必要的工作。
+详情可以去看看Netflix最新篇章，链接如下：
+https://medium.com/netflix-techblog/open-sourcing-metaflow-a-human-centric-framework-for-data-science-fa72e04a5d9
 
 Tip
+本周，对于工作中的总结是android系统导致机器重启问题的一般解决办法
+具体分析如下：
+android重启原因分析
+https://blog.csdn.net/chi_wy/article/details/42472279
 
 Share
+以下是个人对于数据结构与算法中栈的总结与练习
+https://blog.csdn.net/qq_40073459/article/details/103434463
