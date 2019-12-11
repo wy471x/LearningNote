@@ -12,11 +12,25 @@ https://leetcode-cn.com/problems/longest-univalue-path/
 class Solution {
 public:
     int longestUnivaluePath(TreeNode* root) {
-        if(root) return length;
-        length++; 
+        if(root == nullptr) return this->length;
+        this->length++; 
+        longestPathLength(root->left);
+        longestPathLength(root->right);
+        return this->length;
     }
 
-    int longestUn
+    void longestPathLength(TreeNode *node){
+        if(node->left == nullptr && node->right == nullptr) return;
+        if(node->left->val == node->val){
+            this->length++;
+            longestPathLength(node->left);
+            longestPathLength(node->right);
+        }else {
+            this->length++;
+            longestPathLength(node->left);
+            longestPathLength(node->right);
+        }
+    }
 private:
     int length = 0;
 };
