@@ -36,7 +36,16 @@ private:
 };
 
 Review
+本周分享的是来自Netflix Cloud data团队中 Josh Snyder所写的一篇关于开源名为
+ s3-flash-bootloader的文章,有兴趣的可以去看看
+ https://medium.com/@NetflixTechBlog/datastore-flash-upgrades-187f1e4ef859
 
 Tip
+由于自己在notepad++的使用中发现对于自己手动敲代码的速率过慢，所以便在search到
+一篇关于代码模板的文章，于是自己将其运用到实际开发当中，个人感觉效果不错。在这
+里将该篇技术文章分享给大家，有兴趣的可以看看
+https://blog.csdn.net/u012453843/article/details/61424813
 
 Share
+以下是自己对于Linux学习的总结
+https://blog.csdn.net/qq_40073459/article/details/103466279
