@@ -1,5 +1,23 @@
 Algorithm
 https://leetcode-cn.com/problems/valid-anagram/
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+         if( (t.empty() && !s.empty()) || (s.size() != t.size()) )
+             return false;
+         map<char,int> icm;
+         for(int i = 0; i < s.size(); i++){
+               icm[s[i]]++;
+         }
+         for(int j = 0;j < t.size(); j++){
+               icm[t[j]]++;
+         }
+         for(auto temp : icm)
+            if( temp.second % 2 == 1 )
+                return false;
+        return true;
+    }
+};
 
 Review
 
