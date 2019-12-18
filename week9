@@ -5,16 +5,19 @@ public:
     bool isAnagram(string s, string t) {
          if( (t.empty() && !s.empty()) || (s.size() != t.size()) )
              return false;
-         map<char,int> icm;
+         map<char,int> sMap,tMap;
          for(int i = 0; i < s.size(); i++){
-               icm[s[i]]++;
+               sMap[s[i]]++;
          }
          for(int j = 0;j < t.size(); j++){
-               icm[t[j]]++;
+               tMap[t[j]]++;
          }
-         for(auto temp : icm)
-            if( temp.second % 2 == 1 )
+         if(sMap.size() != tMap.size())
+            return false;
+         for(auto it = tMap.begin(); it != tMap.end(); it++){
+             if(sMap[(*it).first] != (*it).second )
                 return false;
+         }
         return true;
     }
 };
