@@ -36,12 +36,34 @@ public:
         return false;
     }
 };
-problem 2：
-link ：https://leetcode-cn.com/problems/sort-list/solution/
-
 
 Review
+https://medium.com/netflix-techblog/dblog-a-generic-change-data-capture-framework-69351fb9099b
+对于现有CDC（change-data-capture）项目的局限性，Netflix团队开始了DBLog项目的开发，
+这个DBLog的主要有如下特性：
+	1. Processes captured log events in-order.
+	2. Dumps can be taken any time
+	3. Interleaves log with dump events, by taking dumps in chunks.
+	4. No locks on tables are ever acquired
+	5. Supports any kind of output
+	6. Designed with High Availability in mind
+以及相关的需求：
+	• Capturing the full state
+	• Triggering repairs at any time.
+	• Providing high availability for real-time events. 
+	• Minimizing database impact. 
+	• Writing events to any output.
+	• Supporting Relational Databases.
+针对以往CDC项目的局限性，提出的一些方案具有以下限制：
+	  1. Stopping log event processing while processing a dump.
+	  2. Missing ability to trigger dumps on demand. 
+	  3. Blocking write traffic by locking tables. 
+      4. Using database specific features.
 
 Tip
+在项目中涉及到一些关于驱动开发的知识，具体如下：
+https://blog.csdn.net/shanshanpt/article/details/19897897
 
 Share
+Vim使用技巧：
+https://blog.csdn.net/qq_40073459/article/details/103652151#Level%201%EF%BC%9A
