@@ -1,5 +1,4 @@
 Algorithm
-problem 1 ：
 link ： https://leetcode-cn.com/problems/valid-anagram/
 solution 1: hash table
 class Solution {
