@@ -1,6 +1,4 @@
 Algorithm
-https://leetcode-cn.com/problems/sort-list/
-solution:  mergesort list
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -14,6 +12,12 @@ public:
     ListNode* sortList(ListNode* head) {
         if( head == nullptr || head->next == nullptr)
             return head;
+        ListNode *fast = head;
+        ListNode *slow = head;
+        while( fast->next != nullptr && fast->next->next != nullptr ){
+            fast = fast->next->next;
+            slow = slow->next;
+        }
         
     }
 
