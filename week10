@@ -1,4 +1,5 @@
 Algorithm
+https://leetcode-cn.com/problems/sort-list/submissions/
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -12,16 +13,34 @@ public:
     ListNode* sortList(ListNode* head) {
         if( head == nullptr || head->next == nullptr)
             return head;
-        ListNode *fast = head;
+        // cut 
+        ListNode *fast = head->next;
         ListNode *slow = head;
-        while( fast->next != nullptr && fast->next->next != nullptr ){
+        while( fast != nullptr && fast->next != nullptr ){
             fast = fast->next->next;
             slow = slow->next;
         }
-        
+        ListNode *tmp = slow->next;
+        slow->next = nullptr;
+        ListNode *left = sortList(head);
+        ListNode *right = sortList(tmp);
+        ListNode *h = new ListNode(0);
+        // merge
+        ListNode *t = h;
+        while(left != nullptr && right != nullptr){
+            if( left->val > right->val ){
+                t->next = right;
+                right = right->next;
+                t = t->next;
+            }else{
+                t->next = left;
+                left = left->next;
+                t = t->next;
+            }
+        }
+        t->next = left != nullptr ? left : right;
+        return h->next;
     }
-
-
 };
 
 Review
