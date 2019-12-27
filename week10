@@ -1,5 +1,6 @@
 Algorithm
-https://leetcode-cn.com/problems/sort-list/submissions/
+problem 2:
+https://leetcode-cn.com/problems/sort-list/
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -40,6 +41,22 @@ public:
         }
         t->next = left != nullptr ? left : right;
         return h->next;
+    }
+};
+problem 2:
+https://leetcode-cn.com/problems/intersection-of-two-arrays/
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+                  if( nums1.empty() || nums2.empty() )
+                    return vector<int>();
+                  vector<int> result;
+                  sort(nums1.begin(),nums1.end());
+                  sort(nums2.begin(),nums2.end());
+                  set_intersection(nums1.begin(),nums1.end(),nums2.begin(),nums2.end(),back_inserter(result));
+                  auto last = unique(result.begin(),result.end());
+                  result.erase(last,result.end());
+                  return result;
     }
 };
 
