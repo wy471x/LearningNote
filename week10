@@ -61,7 +61,15 @@ public:
 };
 
 Review
+https://medium.com/netflix-techblog/data-compression-for-large-scale-streaming-experimentation-c20bfab8b9ce
+本文详细阐述了数据压缩在大规模流媒体实现中的重要性，并且其中还提到一些具体针对数据压缩方面可行的方法，比如“Quantile 
+Bootstrap”和“Rare Event Bootstrap”等。此外本篇中还提到一种有效的压缩机制，具体可见本篇文章中的具体细节，再次不再赘述。
 
 Tip
+调整内核printk的打印级别对于串口调试来说十分重要。
+具体使用技巧可见:
+https://blog.csdn.net/wjflyhigh/article/details/8845363
 
 Share
+Linux学习笔记：
+https://blog.csdn.net/qq_40073459/article/details/103723124
