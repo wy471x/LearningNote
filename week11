@@ -1,4 +1,5 @@
 Algorithm
+problem 1:
 https://leetcode-cn.com/problems/sqrtx/
 binary search 
 class Solution {
@@ -19,6 +20,8 @@ public:
         return (int) left;
     }
 };
+problem 2:
+https://leetcode-cn.com/problems/powx-n/
 
 Review
 
