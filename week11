@@ -43,9 +43,13 @@ public:
 };
 
 Review
-
+在这里推荐一篇关于并行化处理提高计算机性能的解决方案的文章
+http://csapp.cs.cmu.edu/3e/waside/waside-simd.pdf
 
 Tip
-
+对于网页不可访问问题的解决方案：
+ https://blog.csdn.net/will5451/article/details/53861092
 
 Share
+Android -> C 的映射函数 JNINativeMethod详解
+http://www.voidcn.com/article/p-tuxtajiw-bcb.html
