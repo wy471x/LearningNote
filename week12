@@ -1,4 +1,25 @@
 Algorithm
+https://leetcode-cn.com/problems/powx-n/submissions/
+class Solution {
+public:
+    double myPow(double x, int n) {
+        if( x == 0 || x == 1 || n == 0 )
+            return 1;
+        double result = 1;
+        if( n > 0 ){
+            while(n--){
+                result *= x;
+            }
+            return result;
+        }else{
+            unsigned long contraryNumber = abs(n);
+            while(contraryNumber--){
+                result *= x;
+            }
+            return 1 / result;
+        }
+    }
+};
 
 Review
 
