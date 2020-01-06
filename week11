@@ -1,5 +1,4 @@
 Algorithm
-problem 1:
 https://leetcode-cn.com/problems/sqrtx/
 binary search 
 class Solution {
@@ -18,27 +17,6 @@ public:
         }
 
         return (int) left;
-    }
-};
-problem 2:
-https://leetcode-cn.com/problems/powx-n/
-class Solution {
-public:
-    double myPow(double x, int n) {
-        if( x == 0 || n == 0 )
-            return 1;
-        if( n > 0 ){
-            while(n--){
-                x *= x;
-            }
-            return x;
-        }else{
-            int contraryNumber = abs(n);
-            while(contraryNumber--){
-                x *= x;
-            }
-            return 1 / x;
-        }
     }
 };
 
