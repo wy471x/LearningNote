@@ -12,7 +12,7 @@ public:
             }
             return result;
         }else{
-            unsigned long contraryNumber = -n;
+            long long contraryNumber = -n;
             while(contraryNumber--){
                 result *= x;
             }
