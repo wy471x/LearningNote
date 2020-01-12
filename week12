@@ -22,11 +22,13 @@ public:
 };
 
 Review
-
+APUE中示例中的实际编写的情形：
+https://blog.csdn.net/qq_40073459/article/details/103789913
 
 Tip
 项目中遇到的有关redis链接库错误的处理解决方案：
 https://blog.csdn.net/dumeifang/article/details/2963223
 
 Share
-
+copy_from_user函数详解
+https://blog.csdn.net/eroswang/article/details/3529750
