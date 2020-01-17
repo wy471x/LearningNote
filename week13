@@ -1,7 +1,7 @@
 Algorithm
 problem 1
 https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/submissions/
-volience solution
+volience solution : O(n)
 class Solution {
 public:
     int findMin(vector<int>& nums) {
@@ -13,7 +13,7 @@ public:
         return min;
     }
 };
-binary solution
+binary solution : O(logn)
 class Solution {
 public:
     int findMin(vector<int>& nums) {
@@ -50,6 +50,24 @@ public:
                         }
                     }
                     return result;
+    }
+};
+double pointer solution : O(logn) 
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+                int low = 0, high = numbers.size() - 1;
+                while(low < high){
+                    if(numbers[low] + numbers[high] > target)
+                        high--;
+                    else 
+                        if(numbers[low] + numbers[high] < target)
+                            low++;
+                        else
+                            return vector<int>({low + 1, high + 1});
+                }
+
+                return vector<int>({-1,-1});
     }
 };
 
