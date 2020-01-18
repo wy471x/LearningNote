@@ -36,7 +36,7 @@ public:
 };
 problem 2
 https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/submissions/
-volience solution : O(n^2) timeout
+Complexity Anlysis: Time O(n^2) Space O(1)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
@@ -52,7 +52,7 @@ public:
                     return result;
     }
 };
-double pointer solution : O(logn) 
+Complexity Anlysis : Time O(logn) Space O(1)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
@@ -68,6 +68,21 @@ public:
                 }
 
                 return vector<int>({-1,-1});
+    }
+};
+problem 3:
+https://leetcode-cn.com/problems/remove-element/submissions/
+Complexity Anlysis: Time O(n) , Space O(1) 
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+            for(auto it = nums.begin(); it != nums.end();){
+                if(*it == val)
+                    it = nums.erase(it);
+                else
+                    it++;
+            }
+            return nums.size();
     }
 };
 
