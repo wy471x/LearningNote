@@ -87,7 +87,15 @@ public:
 };
 
 Review
+https://netflixtechblog.com/engineering-a-studio-quality-experience-with-high-quality-audio-at-netflix-eaa0b6145f32
+本篇文章阐述了netflix团队在对于媒体播放声音质量上进行的在技术上的相关处理，并且针对不同声音比特率下，网络吞吐量和视频比特率的变化关系；
+netflix团队针对通过观察声音比特率的提高对网络和视频的影响得出适用流的想法来提高声音的质量。提高声音质量上不仅要考虑上述的问题还有诸如
+设备硬件问题以及算法设计上需要考虑的问题。
 
 Tip
+这里给出Android Crash案列的分析，该案例中均是自己在项目中的所得
+https://blog.csdn.net/qq_40073459/article/details/104023544
 
 Share
+Android学习笔记分享
+https://blog.csdn.net/qq_40073459/article/details/104031595
