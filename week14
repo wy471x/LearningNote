@@ -37,6 +37,10 @@ public:
 };
 
 Review
+https://netflixtechblog.com/android-rx-onerror-guidelines-e68e8dc7383f
+Rx onError Guidelines
+这篇文章简述了对于一些对Rx中的API的使用向导，目的是帮助开发者去创建出一致性和感知性的API
+分别从保持一致性、避免业务逻辑以及传递细节等方面对创建更好的API提出了实质性建议
 
 Tip
 Linux命令
