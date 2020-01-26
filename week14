@@ -1,4 +1,40 @@
 Algorithm
+https://leetcode-cn.com/problems/binary-tree-level-order-traversal/submissions/
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    vector<vector<int>> levelOrder(TreeNode* root) {
+        if(root == nullptr)
+            return vector<vector<int>>();
+        queue<TreeNode *>que;
+        que.push(root);
+        int level = 0;
+        vector<vector<int>> result;
+        while(!que.empty()){
+            vector<int> tmp;
+            int size = que.size();
+            while(size--){
+                TreeNode *element = que.front();
+                que.pop();
+                tmp.push_back(element->val);
+                if(element->left != nullptr)
+                    que.push(element->left);
+                if(element->right != nullptr)
+                    que.push(element->right);
+            }
+            result.push_back(tmp);
+        }
+        return result;
+    }
+};
 
 Review
 
