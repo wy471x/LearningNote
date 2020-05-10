@@ -1,5 +1,7 @@
 ## Algorithm
+题目：另一个树的子树
 题目链接：<https://leetcode-cn.com/problems/subtree-of-another-tree/>
+递归解法
 > C++ 实现
 ```c++
 /**
