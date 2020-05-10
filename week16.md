@@ -1,7 +1,4 @@
 ## Algorithm
-
-### problem 1：
-
 题目链接：<https://leetcode-cn.com/problems/subtree-of-another-tree/>
 > C++ 实现
 ```c++
@@ -71,13 +68,16 @@ class Solution {
 
 ##  Review 
 原文链接：<https://www.cnblogs.com/KevinYang/archive/2010/06/18/1760597.html>
+
 本文主要讲解关于字符编解码方面的一些基础知识，会对今后处理相关的技术时有所助益。
 
 ##  Tip 
 相关链接：<https://blog.csdn.net/kris_fei/article/details/78084114>
+
 该文主要讲解了一些Android系统启动流程，由于我在工作中遇到项目上对于Android系统崩溃，需要检测系统自动进行恢复出厂色模式，从这篇文章中了解了一些Android系统启动相关的模式。
 
 ##  Share 
 个人文章链接：<https://blog.csdn.net/qq_40073459/article/details/104752813>
+
 上述链接中的文章是自己在学习《Operating System Concepts》第十版时，总结一些关于同步问题的讨论。
 
