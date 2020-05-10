@@ -68,5 +68,15 @@ class Solution {
 }
 ```
 ## Review
-## Share
+原文链接：<https://blog.csdn.net/weixin_42653531/article/details/82530685>
+
+由于后面要对C51单片机系列进行项目的开发，所要找了关于C51系列单片机开发的博客文章进行了一番学习。对于这篇文章而言，总体讲解比较细致，不管是理论上，还是实践上，两者均是俱佳的。
+
 ## Tip
+相关链接：<http://wiki.t-firefly.com/zh_CN/Firefly-RK3128/customize_Android_firmware.html>
+
+关于RK芯片上的一些部件的详细文档。
+
+## Share
+个人文章链接：<https://blog.csdn.net/qq_40073459/article/details/105694808>
+我的这篇文章主要讲解关于Wireshark抓包神器的使用。
