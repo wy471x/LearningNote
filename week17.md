@@ -33,7 +33,7 @@ class Solution {
     }
 };
 ```
-> java 实现
+> Java 实现
 ```java
 /**
  * Definition for a binary tree node.
