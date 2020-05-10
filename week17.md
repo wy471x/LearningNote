@@ -4,6 +4,7 @@
 题目链接：<https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/>
 
 递归解法：
+> C++ 实现
 ```c++
 /**
  * Definition for a binary tree node.
@@ -32,6 +33,7 @@ class Solution {
     }
 };
 ```
+> java 实现
 ```java
 /**
  * Definition for a binary tree node.
