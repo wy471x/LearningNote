@@ -3,7 +3,7 @@
 ### problem 1：
 
 题目链接：<https://leetcode-cn.com/problems/subtree-of-another-tree/>
-
+> C++ 实现
 ```c++
 /**
  * Definition for a binary tree node.
@@ -34,6 +34,7 @@ public:
     }
 };
 ```
+> Java 实现
 ```java
 /**
  * Definition for a binary tree node.
