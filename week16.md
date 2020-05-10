@@ -3,7 +3,7 @@
 
 题目链接：<https://leetcode-cn.com/problems/subtree-of-another-tree/>
 
-递归解法
+递归解法：
 > C++ 实现
 ```c++
 /**
