@@ -34,6 +34,39 @@ public:
     }
 };
 ```
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public boolean isSubtree(TreeNode s, TreeNode t) {
+        return dfs(s, t);
+    }
+    
+    boolean check(TreeNode o, TreeNode t){
+        if((o == null) && (t == null)) return true;
+        if(((o == null) && (t != null)) || ((o != null) && (t == null)) || (o.val != t.val)) return false;
+        return check(o.left, t.left) && check(o.right, t.right);
+    }
+    
+    boolean dfs(TreeNode o, TreeNode t){
+        if(o == null) return false;
+        return check(o, t) || dfs(o.left, t) || dfs(o.right, t);
+    }
+}
+```
 
 ##  Review 
 
