@@ -2,7 +2,7 @@
 
 题目：Pow(x, n)
 
-题目链接：< https://leetcode-cn.com/problems/powx-n/ >
+题目链接：<https://leetcode-cn.com/problems/powx-n/>
 
 ```c++
 class Solution {
@@ -21,6 +21,35 @@ public:
         
     }
 };
+```
+
+题目：K个一组翻转链表
+
+题目链接：<https://leetcode-cn.com/problems/reverse-nodes-in-k-group/>
+
+> C++ 实现
+
+```c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        
+    }
+};
+```
+
+> Java 实现
+
+```java
+
 ```
 
 ## Review

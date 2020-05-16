@@ -4,6 +4,8 @@
 
 题目链接：< https://leetcode-cn.com/problems/check-balance-lcci/ >
 
+> C++ 实现
+
 ```c++
 /**
  * Definition for a binary tree node.
@@ -33,7 +35,11 @@ public:
 };
 ```
 
+
+
 ## Review
+
+
 
 ## Tip
 
