@@ -45,13 +45,6 @@ public:
     }
 };
 ```
-
-> Java 实现
-
-```java
-
-```
-
 ## Review
 
 ## Tip
