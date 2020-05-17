@@ -2,7 +2,7 @@
 
 题目：检查平衡性
 
-题目链接：< https://leetcode-cn.com/problems/check-balance-lcci/ >
+题目链接：<https://leetcode-cn.com/problems/check-balance-lcci/>
 ```c++
 /**
  * Definition for a binary tree node.
