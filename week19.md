@@ -32,7 +32,13 @@ public:
 };
 ```
 ## Review
-原文链接
+原文链接：<https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072>
+> 
+
 ## Tip
+相关文章链接：<https://blog.csdn.net/qq_40073459/article/details/105755082> 
+> 上面文章中主要涉及的是自己在网络编程方面所做的学习笔记。
 
 ## Share
+分享文章链接：<https://blog.csdn.net/qq_40073459/article/details/105776041>
+> 上面文章是自己利用wireshark抓包工具对于HTTP学习上的笔记与总结。
