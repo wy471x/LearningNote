@@ -13,7 +13,7 @@
 ```tex
 输入：s = "eleetminicoworoep"
 输出：13
-解释：最长子字符串是 "leetminicowor" ，它包含 e，i，o 各 2 个，以及 0 个 a，u 。
+解释：最长子字符串是 "leetminicowor" ，它包含 e，i，o 各 2 个，以及 0 个 a，u 。
 ```
 
 **示例 2：**
@@ -67,10 +67,26 @@ public:
 };
 ```
 
-> 时间复杂度：因为遍历了整个字符串，故整个时间复杂度为O()
+> **时间和空间复杂度分析**
+>
+> 时间复杂度：因为遍历了整个字符串，故整个时间复杂度为$O(n)$。
+>
+> 空间复杂度：因为只使用了一个定长为m(上题 m = 32)的数组来存放字符出现的最早位置，故空间复杂度为$O(m)$。
 
 ## Review
 
+原文链接：<https://netflixtechblog.com/svt-av1-an-open-source-av1-encoder-and-decoder-ad295d9b5ca2>
+
+> [SVT-AV1](https://github.com/OpenVisualCloud/SVT-AV1/)是Intel和Netflix公司合作进行开发的一个视频编解码的框架开源项目。该文主要从两个方面对其性能和压缩效率进行了简略阐述，首先在编码上，`SVT-AV1`相对于`libaom`来说，压缩速率和整体上的性能而言都要更胜一筹；其次是在解码上，当`SVT-AV1`和`libaom`都以单线程模式运行时，`SVT-AV1`的解码要稍快一些，而在以四线程模式运行时，相对于`libaom`而言，`SVT-AV1`则会获得更大的解码速度的提升。
+
 ## Tip
 
+相关文章链接：<https://blog.csdn.net/qq_40073459/article/details/106315277>
+
+> Android Service工作中需要了解的内容，自己对其相关特性及运行流程进行了实践和了解。
+
 ## Share
+
+分享文章链接：<https://blog.csdn.net/qq_40073459/article/details/104384940>
+
+> 上面文章是自己对APUE的学习笔记。
