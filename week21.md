@@ -1,8 +1,6 @@
 ## Algorithm
 
-题目：每个元音包含偶数次的最长子字符串
-
-题目链接：<https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/>
+题目：[每个元音包含偶数次的最长子字符串](https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)
 
 题目描述：
 
@@ -75,7 +73,7 @@ public:
 
 ## Review
 
-原文链接：<https://netflixtechblog.com/svt-av1-an-open-source-av1-encoder-and-decoder-ad295d9b5ca2>
+原文：[**SVT-AV1: open-source AV1 encoder and decoder**](https://netflixtechblog.com/svt-av1-an-open-source-av1-encoder-and-decoder-ad295d9b5ca2)
 
 > [SVT-AV1](https://github.com/OpenVisualCloud/SVT-AV1/)是Intel和Netflix公司合作进行开发的一个视频编解码的框架开源项目。该文主要从两个方面对其性能和压缩效率进行了简略阐述，首先在编码上，`SVT-AV1`相对于`libaom`来说，压缩速率和整体上的性能而言都要更胜一筹；其次是在解码上，当`SVT-AV1`和`libaom`都以单线程模式运行时，`SVT-AV1`的解码要稍快一些，而在以四线程模式运行时，相对于`libaom`而言，`SVT-AV1`则会获得更大的解码速度的提升。
 

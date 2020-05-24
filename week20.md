@@ -1,8 +1,6 @@
 ## Algorithm
 
-题目：乘积最大子数组
-
-题目链接： https://leetcode-cn.com/problems/maximum-product-subarray/ 
+题目：[乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)
 
 题目描述：
 
@@ -53,7 +51,7 @@ public:
 
 ## Review
 
-原文链接：<https://medium.com/androiddevelopers/improving-build-speed-in-android-studio-3e1425274837>
+原文：[**Improving build speed in Android Studio**](https://medium.com/androiddevelopers/improving-build-speed-in-android-studio-3e1425274837)
 
 > 本篇文章介绍关于提升在Android Studio中构建项目的速度。通过对于在不同版本Android Studio中构建速度的观察发现，很明显的现象是随着版本的发布应当是项目构建的速度会逐步提升，但是实践中却是构建的速度仍然是缓慢的。在项目的构建过程中，整个项目会包含越来越多的代码、资源的使用甚至是语言的特点，正是这些造成了构建速度更加缓慢。然而，同样还有一些其他的因素在影响着构建的速度，比如：1. [Spectre and Meltdown](https://meltdownattack.com/) 补丁；2. 第三方和自定义`Gradle`插件  ；3. 大部分注解处理都是非增长性的；4. `Java 8` 的使用； 5. `Kotlin`的使用。`Android`团队对这些问题做出了一些改善，比如：1.修复内部的处理和持续的性能提升； 2. 增加了寻找原因的工具(Attribution tools)。对于项目构建速度上的提升，开发者所能做的有：1. 使用工具；2. 充分利用你的构建的配置和任务。
 
