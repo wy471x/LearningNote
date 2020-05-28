@@ -47,10 +47,12 @@ public:
     }
     
     bool dfs(TreeNode *node){
-        if(node==NULL) return false;
+        if(node==NULL) return true;
+        bool ltree = dfs(node->left), rtree = dfs(node->right);
+        if(ltree&&rtree) return true;
         if((node->left==NULL&&node->right==NULL) || (node->left==NULL&&node->right->val>node->val)||(node->right==NULL&&node->left->val<node->val) || (node->left->val<node->val&&node->right->val>node->val))
             return true;
-         return dfs(node->left)&&dfs(node->right);
+         else return false;
     }
 };
 ```
