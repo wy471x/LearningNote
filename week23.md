@@ -51,6 +51,14 @@ public:
 >
 > 空间复杂度：只使用了两个变量存储结果和子数组和的大小，故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(1))
 
+解法2：
+
+```c++
+
+```
+
+
+
 ## Review
 
 ## Tip
