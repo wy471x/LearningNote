@@ -51,10 +51,27 @@ public:
 >
 > 空间复杂度：只使用了两个变量存储结果和子数组和的大小，故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(1))
 
-解法2：
+解法2：**哈希表+逐一统计**
+
+解题思路：前缀和以及同余定理
 
 ```c++
-
+class Solution {
+public:
+    int subarraysDivByK(vector<int>& A, int K) {
+        unordered_map<int, int> record = {{0, 1}};
+        int sum = 0, ans = 0;
+        for (int elem: A) {
+            sum += elem;
+            int modulus = (sum % K + K) % K;
+            if (record.count(modulus)) {
+                ans += record[modulus];
+            }
+            ++record[modulus];
+        }
+        return ans;
+    }
+};
 ```
 
 
