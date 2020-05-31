@@ -81,7 +81,7 @@ public:
 
 ## Review
 原文：[Open Sourcing Mantis: A Platform For Building Cost-Effective, Realtime, Operations-Focused Applications](https://netflixtechblog.com/open-sourcing-mantis-a-platform-for-building-cost-effective-realtime-operations-focused-5b8ff387813a)
-> 本文主要介绍了Netflix开源的Mantis平台。Mantis平台集众多优点于一身，比如：1. 简化回复新提问 2. 提供回答问题的效率。构建Mantis的指导规则有：1. 允许访问原生事件 2. 访问事件的实时性 3. 在没有新指令加入应用中时，可以提出关于数据的新问题 4. 以高效的方式完成上述事情。 同时，Mantis给Netflix带来的价值有以下几个部分：1. 可以实时监控Netflix流的稳定性 2. 上下文的警告 3. 劫持(Raven) 3. Cassandra健康检查 4. 警告性Log 5. 混乱体验监控 6. 实时个人身份识别信息。[Mantis](https://netflix.github.io/mantis/)
+> 本文主要介绍了Netflix开源的Mantis平台。Mantis平台集众多优点于一身，比如：1. 简化回复新提问 2. 提供回答问题的效率。构建Mantis的指导规则有：1. 允许访问原生事件 2. 访问事件的实时性 3. 在没有新指令加入应用中时，可以提出关于数据的新问题 4. 以高效的方式完成上述事情。 同时，Mantis给Netflix带来的价值有以下几个部分：1. 可以实时监控Netflix流的稳定性 2. 上下文的警告 3. 劫持(Raven) 3. Cassandra健康检查 4. 警告性Log 5. 混乱体验监控 6. 实时个人身份识别信息。Netflix开源项目：[Mantis](https://netflix.github.io/mantis/)
 
 ## Tip
 相关文章：[How I print the ALOGI(…) in Android C++ file?](https://stackoverflow.com/questions/38584876/how-i-print-the-alogi-in-android-c-file)
