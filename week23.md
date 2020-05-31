@@ -76,7 +76,8 @@ public:
 > 时间与空间复杂度分析
 >
 > 时间复杂度：顺序遍历数组，哈希表操作为![](https://latex.codecogs.com/gif.latex?O(1))，故总体时间复杂度为![](https://latex.codecogs.com/gif.latex?O(n))
-> 空间复杂度：当 ![](https://latex.codecogs.com/gif.latex?N&space;\leq&space;K) 时，最多有 N 个前缀和，因此哈希表中最多有 N+1 个键值对；当  ![](https://latex.codecogs.com/gif.latex?N&space;>&space;K) 时，最多有 K 个不同的余数，因此哈希表中最多有 K 个键值对。也就是说，哈希表需要的空间取决于 N 和 K 中的较小值,故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(min(N,&space;K)))
+>
+> 空间复杂度：当 ![](https://latex.codecogs.com/gif.latex?N&space;\leq&space;K) 时，最多有 ![](https://latex.codecogs.com/gif.latex?N) 个前缀和，因此哈希表中最多有![](https://latex.codecogs.com/gif.latex?N&plus;1) 个键值对；当  ![](https://latex.codecogs.com/gif.latex?N&space;>&space;K) 时，最多有 ![](https://latex.codecogs.com/gif.latex?K) 个不同的余数，因此哈希表中最多有 ![](https://latex.codecogs.com/gif.latex?K) 个键值对。也就是说，哈希表需要的空间取决于 ![](https://latex.codecogs.com/gif.latex?N) 和 ![](https://latex.codecogs.com/gif.latex?K) 中的较小值,故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(min(N,&space;K)))
 
 ## Review
 
