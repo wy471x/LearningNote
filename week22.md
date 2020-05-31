@@ -73,7 +73,7 @@ public:
 > 空间复杂度为：使用到标志位和一个存储值的变量，故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(1))
 
 ## Review
-
+原文：[Keeping Customers Streaming — The Centralized Site Reliability Practice at Netflix](https://netflixtechblog.com/keeping-customers-streaming-the-centralized-site-reliability-practice-at-netflix-205cc37aa9fb)
 
 ## Tip
 
