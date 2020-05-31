@@ -29,7 +29,7 @@
 解释: 输入为: [5,1,4,null,null,3,6]。
      根节点的值为 5 ，但是其右子节点值为 4 。
 ```
-
+解法：**中序遍历**
 ```c++
 /**
  * Definition for a binary tree node.
@@ -41,18 +41,28 @@
  * };
  */
 class Solution {
+private:
+    bool flag;
+    long val;
+    void inorderTraverse(TreeNode* root){
+        if(root==nullptr||!flag){
+            return;
+        }
+        inorderTraverse(root->left);
+        if(root->val>val){
+            val=root->val;
+        }else{
+            flag=false;
+            return;
+        }
+        Dfs(root->right);
+    }
 public:
     bool isValidBST(TreeNode* root) {
-		return dfs(root);
-    }
-    
-    bool dfs(TreeNode *node){
-        if(node==NULL) return true;
-        bool ltree = dfs(node->left), rtree = dfs(node->right);
-        if(ltree&&rtree) return true;
-        if((node->left==NULL&&node->right==NULL) || (node->left==NULL&&node->right->val>node->val)||(node->right==NULL&&node->left->val<node->val) || (node->left->val<node->val&&node->right->val>node->val))
-            return true;
-         else return false;
+        flag=true;
+        val=LONG_MIN;
+        inorderTraverse(root);
+        return flag;
     }
 };
 ```
