@@ -67,9 +67,7 @@ public:
 };
 ```
 > 时间和空间复杂度分析
-
 > 时间复杂度为：中序递归遍历中需要保证遍历到左右节点才可保证是一个合法的二叉搜索树，故时间复杂度为![](https://latex.codecogs.com/gif.latex?O(n))
-
 > 空间复杂度为：使用到标志位和一个存储值的变量，故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(1))
 
 ## Review
