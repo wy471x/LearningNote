@@ -74,7 +74,12 @@ public:
 
 ## Review
 原文：[Keeping Customers Streaming — The Centralized Site Reliability Practice at Netflix](https://netflixtechblog.com/keeping-customers-streaming-the-centralized-site-reliability-practice-at-netflix-205cc37aa9fb)
+> 这篇文章中主要介绍了Netflix公司CORE团队在维护站点可靠性方面所扮演的重要角色。CORE应急工程师通常就像一个事件管理者，他们所需要处理的活动主要有：1. 协调性 2. 做出决策 3. 实时观测 4. 技术上的调查 5. 中间元素。总而言之，这只团队在Netflix中发挥着举足轻重的作用。他们只需要关注于可靠性，并能够快速响应风险和保证Netflix能给用户带来持续的愉悦感。
 
 ## Tip
+相关文章：[Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+> 这里是Google关于Java语言的代码风格指南，对于提升自己的代码风格尤为有益。
 
 ## Share
+分享文章：[Linux下df命令简单实现](https://blog.csdn.net/qq_40073459/article/details/106366490)
+> 这里是工作中对于项目中涉及到的内容所作出的总结。
