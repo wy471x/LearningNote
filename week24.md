@@ -4,7 +4,7 @@
 
 题目描述：
 
-> 给你一个包含 *n* 个整数的数组 `nums`，判断 `nums` 中是否存在三个元素 *a，b，c ，*使得 *a + b + c =* 0 ？请你找出所有满足条件且不重复的三元组。
+> 给你一个包含 *n* 个整数的数组 `nums`，判断 `nums` 中是否存在三个元素 *a，b，c*使得 *a + b + c =* 0 ？请你找出所有满足条件且不重复的三元组。
 >
 > **注意：**答案中不可以包含重复的三元组。
 
@@ -111,7 +111,7 @@ public:
 
 ## Review
 原文：[How Netflix uses Druid for Real-time Insights to Ensure a High-Quality Experience](https://netflixtechblog.com/how-netflix-uses-druid-for-real-time-insights-to-ensure-a-high-quality-experience-19e1e8568d06)
-> 分析本文之前，需要了解的是[druid](https://druid.apache.org/docs/latest/design/index.html)。Netflix团队对于利用Druid从以下三个方面进行了解释：1. 数据插入，druid能够回滚数据，因为它可以以最小化应当被存储的原生数据； 2. 数据管理，分组化管理和回滚是一种实现较好的查询性能的有效举措；3. 查询，druid支持两种查询方式，一种是Druid SQL,另一种是原生查询，然而Netflix主要使用的方式是原生查询；4. 范围性的调整。
+> 分析本文之前，需要了解的是[druid](https://druid.apache.org/docs/latest/design/index.html)。Netflix团队对于利用Druid从以下三个方面进行了解释：1. 数据插入，druid能够回滚数据，因为它可以以最小化应当被存储的原生数据； 2. 数据管理，分组化管理和回滚是一种实现较好的查询性能的有效举措；3. 查询，druid支持两种查询方式，一种是Druid SQL,另一种是原生查询，然而Netflix主要使用的方式是原生查询；4. 范围性的调整。经过Netflix团队的不断迭代和调整，druid被证明是如他们最初期望的那样可靠。
 
 ## Tip
 
