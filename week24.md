@@ -119,6 +119,10 @@ public:
 > 分析本文之前，需要了解的是[druid](https://druid.apache.org/docs/latest/design/index.html)。Netflix团队对于利用Druid从以下三个方面进行了解释：1. 数据插入，druid能够回滚数据，因为它可以以最小化应当被存储的原生数据； 2. 数据管理，分组化管理和回滚是一种实现较好的查询性能的有效举措；3. 查询，druid支持两种查询方式，一种是Druid SQL,另一种是原生查询，然而Netflix主要使用的方式是原生查询；4. 范围性的调整。经过Netflix团队的不断迭代和调整，druid被证明是如他们最初期望的那样可靠。
 
 ## Tip
+分享：[Android音频开发（1）：音频基础知识](https://www.jianshu.com/p/c0222de2faed)
+> 上面是自己在工作中遇到的项目需要，关于对于android下的录音的实现。
 
 ## Share
+文章：[文件和目录之函数mkdir、mkdirat、rmdir和读目录函数](https://blog.csdn.net/qq_40073459/article/details/104401251)
+> 这是自己在学习APUE的笔记整理。
 
