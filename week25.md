@@ -69,7 +69,9 @@ class Solution {
 
 > **时间和空间复杂度分析**
 >
-> 
+> 时间复杂度：递归解法，每层一个循环，故时间复杂度为![](https://latex.codecogs.com/gif.latex?O(n^{_{3}}))
+>
+> 空间复杂度: 存储返回结果的空间随数据量变化，故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(n))
 
  [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
@@ -106,10 +108,20 @@ class Solution {
 ```
 
 > **时间和空间复杂度分析**
+>
+>时间复杂度：一层循环，故时间复杂度为![](https://latex.codecogs.com/gif.latex?O(n))
+>
+>空间复杂度：存储结果的空间为常值，故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(1))
 
 ## Review
+原文：[6 Must-Have Tools for Developers](https://medium.com/better-programming/6-must-have-tools-for-developers-430fd56933dd)
+> 本文主要是介绍了一些开发人员必须掌握的一些开发工具，其中包括有 1. [Oh My Zsh](https://ohmyz.sh/)，这是一款shell工具可以让你的工作更让你更> 加轻便 2. ![direnv](https://direnv.net/)，这是一个shell扩展工具，当你输入`cd`，它可以自动加载环境变量 3. ![Lighthouse](https://developers.google.com/web/tools/lighthouse)，这是一个开源的插件用于检测网站性能 4. ![vim-plug](https://github.com/junegunn/vim-plug)和![MELPA Stable ](https://stable.melpa.org/#/)，这两个是`Vim`和`Emacs`的插件管理器 5. ![command-line fuzzy finder](https://github.com/junegunn/fzf)，这是一个文件查询工具，它的运行速度很快，因为是基于`Go`的并发线程去写的 6. ![The Silver Searcher](https://github.com/ggreer/the_silver_searcher)，这款工具是用于查询包含指定字符串的文件并能够显示该字符串在文件中的行号。
 
 ## Tip
+分享：[Eclipse中导入Apache Commons Logging的commons-logging-1.2.jar文件](https://blog.csdn.net/qq_40073459/article/details/103080070)
+> 上面是自己在项目过程中关于jar包导入的问题的相关解决方案。
 
 ## Share
+文章：[进程环境之C程序的存储空间布局、共享库、存储空间分配以及环境变量](https://blog.csdn.net/qq_40073459/article/details/104421265)
+> 上面是自己学习APUE的笔记总结。
 
