@@ -6,7 +6,7 @@
 
 > 给你一个包含 *n* 个整数的数组 `nums`，判断 `nums` 中是否存在三个元素 *a，b，c*使得 *a + b + c =* 0 ？请你找出所有满足条件且不重复的三元组。
 >
-> **注意：**答案中不可以包含重复的三元组。
+> 注意：答案中不可以包含重复的三元组。
 
 **示例：**
 
@@ -56,6 +56,9 @@ public:
 
 > **时间和空间复杂度分析**
 >
+>时间复杂度：因为使用嵌套循环的方式，所以时间复杂度位![](https://latex.codecogs.com/gif.latex?O(n^{2}))
+>
+>空间复杂度：因为最后返回的答案数组会因为数据量的大小有所改变，故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(n))
 
 [3Sum Closest](https://leetcode.com/problems/3sum-closest/description/)
 
@@ -107,7 +110,9 @@ public:
 
 > **时间和空间复杂度分析**
 >
-> 
+>时间复杂度：使用嵌套循环，故时间复杂度为![](https://latex.codecogs.com/gif.latex?O(n^{2}))
+>
+>空间复杂度：因为仅使用了一个变量存储结果，故空间复杂度为![](https://latex.codecogs.com/gif.latex?O(1))
 
 ## Review
 原文：[How Netflix uses Druid for Real-time Insights to Ensure a High-Quality Experience](https://netflixtechblog.com/how-netflix-uses-druid-for-real-time-insights-to-ensure-a-high-quality-experience-19e1e8568d06)
