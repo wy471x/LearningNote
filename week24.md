@@ -110,6 +110,8 @@ public:
 > 
 
 ## Review
+原文：[How Netflix uses Druid for Real-time Insights to Ensure a High-Quality Experience](https://netflixtechblog.com/how-netflix-uses-druid-for-real-time-insights-to-ensure-a-high-quality-experience-19e1e8568d06)
+> 
 
 ## Tip
 
